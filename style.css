@@ -346,7 +346,7 @@ PORTOFOLIO-ATAH HABIBI
 }
 
 .toggle-name{
-    margin-bottom: 3rem;
+    margin-bottom:1rem;
     letter-spacing:5px;
     color:var(--primary-200);
     font-weight: bold;
@@ -404,7 +404,7 @@ PORTOFOLIO-ATAH HABIBI
     padding: 0 1rem;
     max-width:30rem;
     margin: 0 auto;
-    margin-top:4rem;
+    margin-top:1rem;
     
 }
 
