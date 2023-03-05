@@ -747,7 +747,12 @@ PORTOFOLIO-ATAH HABIBI
    display: block;
    margin: 1rem auto;
    letter-spacing: 0;
-   padding:0.5rem;
+   padding:1rem;
+   background:var(--primary-400);
+ }
+
+ .about-btn a{
+     color: var(--primary-900);
  }
 
  .about-btn:hover{
