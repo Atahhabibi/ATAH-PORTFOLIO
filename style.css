@@ -1635,6 +1635,9 @@ PROJECT-PAGE
 
 .project-info{
    margin-bottom:1rem;
+   min-height:10rem;
+   max-height:10rem;
+   overflow: hidden;
 
 }
 
