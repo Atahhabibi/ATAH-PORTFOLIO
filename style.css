@@ -490,13 +490,14 @@ PORTOFOLIO-ATAH HABIBI
     font-weight: bold;
     font-family: var(--ff-family-2);
     font-size:1.3rem;
-    background:rgb(202, 130, 104);
+    background:var(--primary-300);
     transition: var(--transititon);
+    color:var(--primary-900);
     
 }
 
 .hire-me-btn:hover{
-    background:var(--primary-200);
+    background:peru;
     color: var(--primary-800);
     cursor: pointer;
     transform: scale(1.1);
