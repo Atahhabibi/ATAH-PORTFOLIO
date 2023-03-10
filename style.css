@@ -1576,8 +1576,14 @@ PROJECT-PAGE
 ================
 */
 
+.projects-page-section{
+    background:var(--grey-100);
+}
+
 .projects-page-title{
     margin-top:1rem;
+    text-transform: uppercase;
+    letter-spacing:4px;
 }
 
  .project-btn-container{
@@ -1586,42 +1592,53 @@ PROJECT-PAGE
      margin:2rem 1rem;
  }
 
- .project-btn{
+.javascript-btn{
+    background:url('./images/html-2.png');
+   
+}
+
+.react-btn{
+   background:url('./images/reactjs-7.png');
+}
+
+.large-btn{
+    display: none;
+}
+
+
+.project-btn{
      text-transform: uppercase;
-     padding: 1rem 0.4rem;
+     padding: 1rem;
      color: transparent;
      border-radius: 8px;
      cursor: pointer;
      border: transparent;
      margin: 0 1rem;
-     border:4px solid var(--white);
+     border:2px solid var(--grey-400);
      /* outline:4px solid var(--primary-700); */
-     
-    
-
- }
-
-
-
- .javascript-btn{
-     background:url('./images/html:css:javascript.png');
      background-position:center;
      background-size:cover;
-     outline: 4px solid peru;
-
+     background-repeat: no-repeat;
+     
  }
 
- .react-btn{
-    background:url('./images/react.jpeg');
-    background-position:center;
-    background-size:cover;
 
+ .show-active{
+    outline: 5px solid peru;
+    border:4px solid var(--grey-100);
+    box-shadow:0px 20px 15px rgba(68, 124, 60, 0.5)
  }
 
- .btn-underline{
-     margin-top:1rem;
-     width:5rem;
+
+
+ .projects-subtitle{
+     font-size:2rem;
+     text-align: center;
+     font-weight: bold;
+     text-transform:capitalize;
+     margin-top:4rem;
  }
+
 
 
 
@@ -1723,8 +1740,34 @@ PROJECT-PAGE
 
 @media screen and (min-width:600px) {
 
-    .projects-container{
 
+    .projects-subtitle{
+        text-transform: uppercase;
+        margin-bottom:3rem;
+        color: var(--primary-900);
+    }
+
+
+    .project-btn{
+        background:none;
+        color: var(--primary-900);
+        font-size:1.5rem;
+        font-weight: bold;
+        letter-spacing:2px;
+        background:var(--primary-500);
+        
+    }
+
+    .small-btn{
+        display: none;
+    }
+
+    .large-btn{
+        display: block;
+    }
+
+
+    .projects-container{
         display: grid;
         grid-template-columns:1fr 1fr;
         gap:2rem;
@@ -1744,12 +1787,12 @@ PROJECT-PAGE
 
 @media screen and (min-width:820px) {
 
+
     .projects-container{
         grid-template-columns:repeat(auto-fill,minmax(352px,1fr))
   
     }
 
-    
     
 }
 
