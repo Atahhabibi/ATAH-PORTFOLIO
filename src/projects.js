@@ -9,6 +9,16 @@ const reactBtn=getElement('.react-btn');
 const largeScaleDOM=getElement('.large-scale')
 const miniScaleDOM=getElement('.mini-scale')
 
+
+
+window.addEventListener('DOMContentLoaded',()=>{
+    displayProjects(projects[0].largeScale,largeScaleDOM);
+    displayProjects(projects[0].miniScale,miniScaleDOM);
+})
+
+
+
+
 projectBtnContainer.addEventListener('click',(e)=>{
 
     const value=e.target.dataset.value;
@@ -17,6 +27,13 @@ projectBtnContainer.addEventListener('click',(e)=>{
       reactBtn.classList.add('show-active');
       smallJavaBtn.classList.remove('show-active')
       largeJavaBtn.classList.remove('show-active')
+      
+
+      const reactObject=projects.find((project)=>project.name==='react');
+      const {largeScale,miniScale}=reactObject;
+
+       displayProjects(largeScale,largeScaleDOM);
+       displayProjects(miniScale,miniScaleDOM);
 
 
 
@@ -30,17 +47,10 @@ projectBtnContainer.addEventListener('click',(e)=>{
 
       const javascriptObject=projects.find((project)=>project.name==='javascript');
      
-
       const {largeScale,miniScale}=javascriptObject;
 
        displayProjects(largeScale,largeScaleDOM);
-
-      
-
-
-
-
-
+       displayProjects(miniScale,miniScaleDOM);
 
     }
 
