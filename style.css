@@ -1577,7 +1577,7 @@ PROJECT-PAGE
 */
 
 .projects-page-section{
-    background:var(--grey-100);
+    background:var(--primary-100);
 }
 
 .projects-page-title{
@@ -1589,7 +1589,8 @@ PROJECT-PAGE
  .project-btn-container{
      display: grid;
      grid-template-columns:repeat(2,1fr);
-     margin:2rem 1rem;
+     margin:3rem auto;
+     
  }
 
 .javascript-btn{
@@ -1668,6 +1669,7 @@ PROJECT-PAGE
 
 .project-page-img{
     max-height:13rem;
+    min-height:13rem;
     border-top-right-radius:10px;
     border-top-left-radius:10px;
 }
