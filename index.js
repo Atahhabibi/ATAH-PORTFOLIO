@@ -1,4 +1,5 @@
 import {getElement} from './Utils.js';
+import { projects } from './src/projectsData.js';
 
 
 const toggleBtn=getElement('.toggle-btn');

@@ -1580,6 +1580,54 @@ PROJECT-PAGE
     margin-top:1rem;
 }
 
+ .project-btn-container{
+     display: grid;
+     grid-template-columns:repeat(2,1fr);
+     margin:2rem 1rem;
+ }
+
+ .project-btn{
+     text-transform: uppercase;
+     padding: 1rem 0.4rem;
+     color: transparent;
+     border-radius: 8px;
+     cursor: pointer;
+     border: transparent;
+     margin: 0 1rem;
+     border:4px solid var(--white);
+     /* outline:4px solid var(--primary-700); */
+     
+    
+
+ }
+
+
+
+ .javascript-btn{
+     background:url('./images/html:css:javascript.png');
+     background-position:center;
+     background-size:cover;
+     outline: 4px solid peru;
+
+ }
+
+ .react-btn{
+    background:url('./images/react.jpeg');
+    background-position:center;
+    background-size:cover;
+
+ }
+
+ .btn-underline{
+     margin-top:1rem;
+     width:5rem;
+ }
+
+
+
+
+
+
 
 .projects-container{
    margin-top:2rem;
