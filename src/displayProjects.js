@@ -20,8 +20,8 @@ const displayProjects=(projects,container)=>{
         <p class="project-info">${info}</p>
 
         <div class="project-footer">
-            <a href="${githubLink}"><button class="project-icon"><i class="fa-brands fa-github"></i></button></a>
-            <a href="${githubLink}"><button class="source-code">source code</button></a>
+            <a href="${githubLink} " target="_blank"><button class="project-icon"><i class="fa-brands fa-github"></i></button></a>
+            <a href="${githubLink} " target="_blank"><button class="source-code">source code</button></a>
         </div>
 
 

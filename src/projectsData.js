@@ -360,16 +360,7 @@ const projects=[
                 liveLink:''
             },
 
-            {
-                id:17,
-                projectName:'lorem ipsum generator',
-                imgLink:'../images/projects-images/.png',
-                githubLink:'',
-                info:
-                '',
-            
-                liveLink:''
-            },
+       
 
             
 
