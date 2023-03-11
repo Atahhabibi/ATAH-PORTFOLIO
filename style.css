@@ -1578,18 +1578,19 @@ PROJECT-PAGE
 
 .projects-page-section{
     background:var(--primary-100);
+    background:white;
+    padding-bottom:2rem;
 }
 
 .projects-page-title{
     margin-top:1rem;
     text-transform: uppercase;
-    letter-spacing:4px;
 }
 
  .project-btn-container{
      display: grid;
      grid-template-columns:repeat(2,1fr);
-     margin:3rem auto;
+     margin:2rem auto;
      
  }
 
@@ -1620,15 +1621,19 @@ PROJECT-PAGE
      background-position:center;
      background-size:cover;
      background-repeat: no-repeat;
+     transition: var(--transititon);
+    
      
  }
 
 
  .show-active{
-    outline: 5px solid peru;
+    outline: 3px solid peru;
     border:4px solid var(--grey-100);
-    box-shadow:0px 20px 15px rgba(68, 124, 60, 0.5)
+    box-shadow:0px 10px 15px rgba(68, 124, 60, 0.5);
+    scale: 1.1;
  }
+
 
 
 
@@ -1637,9 +1642,14 @@ PROJECT-PAGE
      text-align: center;
      font-weight: bold;
      text-transform:capitalize;
-     margin-top:4rem;
-     border:2px dotted var(--primary-900);
+     margin-top:3rem;
+     border:3px dotted var(--primary-900);
+     padding:0.5rem 0;
+     
+     
  }
+
+
 
 
 
@@ -1660,8 +1670,12 @@ PROJECT-PAGE
     max-height:30rem;
     min-height:28rem;
     border-radius:10px;
-    box-shadow:0px 0px 8px rgba(11, 26, 11, 0.5);
+    box-shadow:0px 0px 20px rgba(0, 0, 0,0.9);
+    transition: var(--transititon);
+   
 }
+
+
 
 .project-img-container{
     position: relative;
@@ -1744,23 +1758,51 @@ PROJECT-PAGE
 @media screen and (min-width:600px) {
 
 
+
+  
+   
     .projects-subtitle{
         text-transform: uppercase;
-        margin-bottom:3rem;
+        margin-top:5rem;
         color: var(--primary-900);
         font-size:2.4rem;
+        border:none;
+        border-bottom:3px dotted var(--primary-800);
+        margin-bottom: 2.8rem;
+   
+    }
+
+    .project-work:hover{
+        transform:scale(1.1);
+        cursor: pointer;
     }
 
 
     .project-btn{
-        background:none;
-        color: var(--primary-900);
-        font-size:1.5rem;
-        font-weight: bold;
+        width:15rem;
+        margin: 0 auto;
+        border:4px solid var(--primary-100);
+        background:var(--primary-900);
+        color: white;
+        border-radius:15px;
+        font-size:1rem;
         letter-spacing:2px;
-        background:var(--primary-500);
+        font-weight: bold;
+        background:white;
+        color: var(--primary-900);
         
     }
+
+    .show-active{
+        outline:3px solid peru;
+        border:3px solid white;
+        box-shadow: none;
+        background:var(--primary-900);
+        color: white;
+    }
+
+  
+
 
     .small-btn{
         display: none;
@@ -1791,6 +1833,12 @@ PROJECT-PAGE
 
 @media screen and (min-width:820px) {
 
+
+    .project-btn{
+        width: 21rem;
+        font-size:1.5rem;
+    }
+  
 
     .projects-container{
         grid-template-columns:repeat(auto-fill,minmax(352px,1fr))

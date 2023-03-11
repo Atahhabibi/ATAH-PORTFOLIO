@@ -30,6 +30,7 @@ projectBtnContainer.addEventListener('click',(e)=>{
       reactBtn.classList.add('show-active');
       smallJavaBtn.classList.remove('show-active')
       largeJavaBtn.classList.remove('show-active')
+     
       
 
       const reactObject=projects.find((project)=>project.name==='react');
@@ -51,7 +52,9 @@ projectBtnContainer.addEventListener('click',(e)=>{
        smallJavaBtn.classList.add('show-active');
        largeJavaBtn.classList.add('show-active');
        reactBtn.classList.remove('show-active')
-
+      
+      
+      
 
       const javascriptObject=projects.find((project)=>project.name==='javascript');
      

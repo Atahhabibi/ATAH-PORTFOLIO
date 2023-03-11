@@ -63,17 +63,7 @@ const projects=[
                 'This is eagator education website, created and design using moslty html and css and its full responsive to all type of devices, you can visit the site live by clicking the live icon above or download from github repository the link below',
                 liveLink:'https://egator-education.netlify.app/index.html'
             },
-            {
-                id:3,
-                projectName:'',
-                imgLink:'../images/complex-images/kara-store.png',
-                githubLink:'',
-                info:
-                '',
-                liveLink:''
-            },
-
-
+      
 
 
 
@@ -199,7 +189,6 @@ const projects=[
        
         
         ],
-
 
 
         miniScale:[
@@ -367,6 +356,17 @@ const projects=[
                 githubLink:'https://github.com/Atahhabibi/JAVASCRIPT-MINI-PROJECTS/tree/main/18-Numbers',
                 info:
                 'This project show the number of activity or projects done by user. It show number in increasing order until it reach the exact number of activity done.This project is done using setInterval functionn in javascript',
+            
+                liveLink:''
+            },
+
+            {
+                id:17,
+                projectName:'lorem ipsum generator',
+                imgLink:'../images/projects-images/.png',
+                githubLink:'',
+                info:
+                '',
             
                 liveLink:''
             },
