@@ -8,12 +8,15 @@ const largeJavaBtn=getElement('.large-btn');
 const reactBtn=getElement('.react-btn');
 const largeScaleDOM=getElement('.large-scale')
 const miniScaleDOM=getElement('.mini-scale')
+const mediumScaleDOM=getElement('.medium-scale');
 
 
 
 window.addEventListener('DOMContentLoaded',()=>{
     displayProjects(projects[0].largeScale,largeScaleDOM);
     displayProjects(projects[0].miniScale,miniScaleDOM);
+    displayProjects(projects[0].mediumScale,mediumScaleDOM);
+    
 })
 
 
@@ -30,16 +33,21 @@ projectBtnContainer.addEventListener('click',(e)=>{
       
 
       const reactObject=projects.find((project)=>project.name==='react');
-      const {largeScale,miniScale}=reactObject;
+      const {largeScale,miniScale,mediumScale}=reactObject;
+
+      
 
        displayProjects(largeScale,largeScaleDOM);
        displayProjects(miniScale,miniScaleDOM);
+       displayProjects(mediumScale,mediumScaleDOM);
+       
 
 
 
     }
 
     if(value==='javascript' || value==='javascript-2'){
+
        smallJavaBtn.classList.add('show-active');
        largeJavaBtn.classList.add('show-active');
        reactBtn.classList.remove('show-active')
@@ -47,10 +55,11 @@ projectBtnContainer.addEventListener('click',(e)=>{
 
       const javascriptObject=projects.find((project)=>project.name==='javascript');
      
-      const {largeScale,miniScale}=javascriptObject;
+      const {largeScale,miniScale,mediumScale}=javascriptObject;
 
        displayProjects(largeScale,largeScaleDOM);
        displayProjects(miniScale,miniScaleDOM);
+       displayProjects(mediumScale,mediumScaleDOM);
 
     }
 
