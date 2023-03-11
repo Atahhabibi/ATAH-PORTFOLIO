@@ -77,11 +77,11 @@ const projects=[
                 id:1,
                 projectName:'Random User',
                 imgLink:'../images/projects-images/randomUser.png',
-                githubLink:'https://github.com/Atahhabibi/JAVASCRIPT-MINI-PROJECTS/tree/main/23-Random%20User',
+                githubLink:'https://github.com/Atahhabibi/ATAH-PRACTICE/tree/main/23-Random-User',
                 info:
                 'This is random user info project where it fetch the user info from the API and then display user info in the screen, the main focus of this project is to display user info into and represent each of info as icon ',
             
-                liveLink:''
+                liveLink:'https://random-follower-user.netlify.app/'
             },
             {
                 id:2,
@@ -121,23 +121,23 @@ const projects=[
                 info:
                 'This project show how we can design submenu in small and also big screen devices, in big screen we can hover over the menu and it instantly show the submenu and in small devices it show as modal overlay',
             
-                liveLink:'https://app.netlify.com/sites/stripe-submenu-project/overview'
+                liveLink:'https://stripe-submenu-project.netlify.app/'
             },
             {
                 id:6,
                 projectName:'Search Wikipedia API',
                 imgLink:'../images/projects-images/wikipedia.png',
-                githubLink:'https://github.com/Atahhabibi/JAVASCRIPT-MINI-PROJECTS/tree/main/28-Wikipedia-API',
+                githubLink:'https://github.com/Atahhabibi/ATAH-PRACTICE/tree/main/28-Wikipedia',
                 info:
                 'This project uses wikipedia API , user can search any topic through search query and the result will display in the screen and you can click in any topic to navigate to more info ',
             
-                liveLink:''
+                liveLink:'https://wikipedia-search-site.netlify.app/'
             },
             {
                 id:7,
                 projectName:'countdown timer',
                 imgLink:'../images/projects-images/timer.png',
-                githubLink:'https://github.com/Atahhabibi/JAVASCRIPT-MINI-PROJECTS/tree/main/12-Countdown',
+                githubLink:'https://github.com/Atahhabibi/ATAH-PRACTICE/tree/main/12-Countdown-times',
                 info:
                 'This countdown timer project count the remaining time and display it in the screen . It show the remaining days hours minutes and seconds of  old iphone to be sell out. please visit the live link above to see full project',
             
@@ -147,11 +147,11 @@ const projects=[
                 id:8,
                 projectName:'pagination',
                 imgLink:'../images/projects-images/pagination.png',
-                githubLink:'https://github.com/Atahhabibi/ATAH-PRACTICE/tree/main/27-pagintion',
+                githubLink:'https://github.com/Atahhabibi/ATAH-PRACTICE/tree/main/27-pagination',
                 info:
                 'This project fetch the followers of specific person from the github API and display in the screen. This project help user to divide the number of follower into each page by using pagination technique in javascript',
             
-                liveLink:''
+                liveLink:'https://pagination-project-site.netlify.app/'
             },
             {
                 id:9,
@@ -183,7 +183,7 @@ const projects=[
                 info:
                 'This is online tea store, this project show how to design fixed sidebar toggle button and animation using keyframes in css you can visit live link or download the project from my github respository',
             
-                liveLink:'https://app.netlify.com/sites/shop-tea/overview'
+                liveLink:'https://shop-tea.netlify.app/'
             },
          
        
@@ -213,7 +213,7 @@ const projects=[
                 info:
                 'This is random dad joke generator by using third person API, every time user click on random button and new joke is fetch and displayed in the screen. Please visit the live by clicking live icon in the middle',
             
-                liveLink:'https://random-dade-joke-project.netlify.app'
+                liveLink:'https://dad-joke-random.netlify.app/'
             },
 
             {
@@ -236,7 +236,7 @@ const projects=[
                 info:
                 'This is counter project, it increaes and decrease the given number and reset it to zero by clicking the speific button given ,the purpose of creating this project is to understand creating function constructer and classes ',
             
-                liveLink:'https://counter-min-project.netlify.app/'
+                liveLink:'https://two-counter.netlify.app/'
             },
 
             {
