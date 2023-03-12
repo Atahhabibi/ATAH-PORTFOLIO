@@ -765,6 +765,7 @@ PORTOFOLIO-ATAH HABIBI
 
 .about-section{
    background:var(--primary-100);
+   
 }
 
 .about-title{
@@ -1520,6 +1521,121 @@ BLOG SECTION
     
 }
 
+
+/* 
+================
+RESUME SECTION
+================
+*/
+
+
+.my-resume{
+    background:var(--white);
+}
+
+
+.resume-title h2{
+    font-size:2rem;
+}
+
+
+
+
+
+
+.resume-container{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    padding-bottom:3rem;
+
+}
+
+.my-resume .resume{
+    margin: 0 auto;
+    padding:1rem ;
+}
+
+.resume-img{
+    
+    width:7rem;
+    display: inline;
+
+   
+
+}
+
+
+@media screen and (min-width:900px) {
+
+    .resume-title{
+        padding:4rem 0;
+        padding-bottom:0;
+    }
+
+    .resume-title h2{
+        font-size:3rem;
+    }
+
+    
+
+  .resume-container{
+      padding:4rem 10rem;
+  }
+
+  .resume-img{
+    width:15rem;
+    transition: all 2s linear;
+    animation: move 3s linear 10 ;
+
+
+
+
+  }
+
+
+  @keyframes move {
+
+    0%{
+        transform:scale(1);
+
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        scale: 1;
+    }
+      
+  }
+
+ 
+ 
+
+
+
+ 
+
+  
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 ================
 FOOTER-SECTION
@@ -1595,13 +1711,18 @@ FOOTER-SECTION
  
  .about-page-section{
      width: 100vw;
-     height:calc(100vh - 15rem);
+     min-height:calc(100vh - 15rem);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+      overflow: hidden;
  }
 
 
  .about-page-title{
-     margin-top:2rem;
-     font-size:2.5rem;
+     /* margin-top:1rem; */
+     font-size:2rem;
+     color:var(--primary-900);
  }
 
  .underline{
@@ -1609,22 +1730,52 @@ FOOTER-SECTION
  }
 
  .about-page-info{
-   padding:1rem;
    max-width:95vw;
    text-align: center;
-   color: var(--grey-500);
+   color: var(--grey-900);
    margin-right: 0 auto;
+ }
+
+ .resume{
+     display: block;
+     font-size:1rem;
+     text-align: center;
+     cursor: pointer;
+     margin:3rem 0;
+     transition: var(--transititon);
+     
+ }
+
+ .resume h5{
+     color: var(--primary-900);
+ }
+
+ 
+
+ .pdf{
+     width:5rem;
+     display: inline;
  }
 
 
 @media screen and (min-width:700px) {
     .about-page-title{
         font-size: 3rem;
+       
     }
     .about-page-info{
-        font-size:1.2rem;
+        font-size:1.4rem;
         margin: 0 auto;
-        max-width:40rem;
+        max-width:60rem;
+  
+    }
+
+    .resume h5{
+        font-size: 2rem;
+    }
+
+    .resume:hover{
+        transform: scale(1.1);
     }
 }
 
