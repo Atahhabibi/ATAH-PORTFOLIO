@@ -309,8 +309,31 @@ PORTOFOLIO-ATAH HABIBI
     display: flex;
     justify-content: space-between;
     padding:1rem;
-    background:var(--primary-600);
+    background:var(--primary-900);
+    box-shadow: none;
+    
 }
+
+.toggle-btn i{
+    color: white;
+}
+
+.show-fixed-small{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:33;
+    border-bottom:2px solid var(--primary-100);
+    box-shadow:0px 5px 15px var(--primary-900) ;
+}
+
+.navbar{
+    box-shadow: none;
+    border: none;
+}
+
+
+
 
 .main-links{
     display: none;
@@ -496,6 +519,10 @@ PORTOFOLIO-ATAH HABIBI
     
 }
 
+.hire-me-btn a{
+    color:var(--primary-900);
+}
+
 .hire-me-btn:hover{
     background:peru;
     color: var(--primary-800);
@@ -528,6 +555,7 @@ PORTOFOLIO-ATAH HABIBI
 
 
 @media screen and (min-width:750px) {
+
 
     .name{
         font-size:5rem;
@@ -563,6 +591,13 @@ PORTOFOLIO-ATAH HABIBI
 @media screen and (min-width:810px) {
 
 
+    .nav-header{
+        position:relative;
+        border-bottom:none;
+        box-shadow:none;
+    }
+    
+
     .toggle-btn{
         display: none;
     }
@@ -576,10 +611,26 @@ PORTOFOLIO-ATAH HABIBI
         margin-left:0.5rem;
     }
 
+  
+    .nav-header{
+        background:var(--primary-900);
+    }
+
+  
+
     .nav-wrapper{
         min-width: 100%;
-        background:var(--primary-600);
+        background:var(--primary-900);
         max-width: var(--max-width);
+        transition: var(--transititon);
+    }
+
+    .show-fixed{
+        position: fixed;
+        top: 0;
+        z-index: 22;
+        border-bottom:2px solid var(--primary-300);
+        box-shadow:0px 5px 30px var(--primary-900);
     }
 
     .navbar{
@@ -589,11 +640,14 @@ PORTOFOLIO-ATAH HABIBI
         display: flex;
         justify-content: space-between;
         max-width: var(--max-width);
-        background:var(--primary-600);
+        background:var(--primary-900);
         box-shadow: none;
         padding-top: 0.2rem;
         padding-bottom: 0.2rem;
+        
     }
+
+  
 
     .logo{
         font-size:2.5rem;
@@ -613,12 +667,12 @@ PORTOFOLIO-ATAH HABIBI
     }
 
     .main-link a{
-        color:var(--primary-900);
+        color:var(--primary-100);
         transition: var(--transititon);
     }
 
     .main-link:hover a{
-        color: var(--primary-100)
+        color:peru;
     }
 
     .atah-profile{
@@ -1063,17 +1117,18 @@ LATEST WORKDS SECTION
     transition: var(--transititon);
     opacity:0;
     text-align: center;
+    font-weight: bold;
 }
 
 
 .project-title{
     text-transform: capitalize;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     font-size:1.5rem;
 }
 
 .client-name{
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 
@@ -1096,7 +1151,7 @@ LATEST WORKDS SECTION
 }
 
 .work-img-container:hover .project-img{
-    opacity: 0.2;
+    opacity:0;
 }
 
 .work-img-container:hover .single-project-info{
@@ -1105,6 +1160,7 @@ LATEST WORKDS SECTION
 
 .work-img-container{
     margin-bottom:2rem;
+    background:var(--primary-900);
 }
 
 
@@ -1151,7 +1207,7 @@ LATEST WORKDS SECTION
         grid-template-rows: 300px 300px;
         gap:1rem;
         grid-template-areas:
-        'a b b'
+        'b b b'
         'a c d';
     }
 
@@ -1577,14 +1633,14 @@ PROJECT-PAGE
 */
 
 .projects-page-section{
-    background:var(--primary-100);
-    background:white;
+    background:var(--primary-900);
     padding-bottom:2rem;
 }
 
 .projects-page-title{
     margin-top:1rem;
     text-transform: uppercase;
+    color: white;
 }
 
  .project-btn-container{
@@ -1595,12 +1651,12 @@ PROJECT-PAGE
  }
 
 .javascript-btn{
-    background:url('./images/html-2.png');
+    background:url('./images/icon/html-2.png');
    
 }
 
 .react-btn{
-   background:url('./images/reactjs-7.png');
+   background:url('./images/icon/reactjs-2.png');
 }
 
 .large-btn{
@@ -1643,8 +1699,9 @@ PROJECT-PAGE
      font-weight: bold;
      text-transform:capitalize;
      margin-top:3rem;
-     border:3px dotted var(--primary-900);
+     border:3px dotted var(--primary-100);
      padding:0.5rem 0;
+     color: white;
      
      
  }
@@ -1755,19 +1812,17 @@ PROJECT-PAGE
 }
 
 
+
 @media screen and (min-width:600px) {
 
-
-
-  
    
     .projects-subtitle{
         text-transform: uppercase;
         margin-top:5rem;
-        color: var(--primary-900);
+        color: var(--primary-100);
         font-size:2.4rem;
         border:none;
-        border-bottom:3px dotted var(--primary-800);
+        border-bottom:3px dotted var(--primary-300);
         margin-bottom: 2.8rem;
    
     }
@@ -1798,7 +1853,7 @@ PROJECT-PAGE
         border:3px solid white;
         box-shadow: none;
         background:var(--primary-900);
-        color: white;
+        color: var(--primary-100);
     }
 
   

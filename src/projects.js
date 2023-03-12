@@ -2,6 +2,8 @@ import {getElement} from '../Utils.js';
 import { projects } from '../src/projectsData.js';
 import { displayProjects } from '../src/displayProjects.js';
 import './toggleSidebar.js'
+import './showFixed.js'
+
 
 const projectBtnContainer=getElement('.project-btn-container');
 const smallJavaBtn=getElement('.small-btn');
