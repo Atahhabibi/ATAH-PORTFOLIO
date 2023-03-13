@@ -1811,7 +1811,20 @@ PROJECT-PAGE
     margin-top:1rem;
     text-transform: uppercase;
     color: white;
+    display: none;
 }
+
+
+
+.filter{
+    color: white;
+    text-align: center;
+    font-size:2rem;
+}
+
+
+
+
 
  .project-btn-container{
      display: grid;
@@ -1819,6 +1832,11 @@ PROJECT-PAGE
      margin:2rem auto;
      
  }
+
+
+
+
+
 
 .javascript-btn{
     background:url('./images/icon/html-2.png');
@@ -1829,9 +1847,7 @@ PROJECT-PAGE
     display: none;
 }
 
-.filter{
-    display: none;
-}
+
 
 .react-btn{
    background:url('./images/icon/reactjs-2.png');
@@ -1856,6 +1872,7 @@ PROJECT-PAGE
      background-size:cover;
      background-repeat: no-repeat;
      transition: var(--transititon);
+
     
      
  }
@@ -1991,12 +2008,14 @@ PROJECT-PAGE
 
 
 
+
+
 @media screen and (min-width:600px) {
 
    
     .projects-subtitle{
         text-transform: uppercase;
-        margin-top:5rem;
+        margin-top:2rem;
         color: var(--primary-100);
         font-size:2.4rem;
         border:none;
@@ -2009,6 +2028,8 @@ PROJECT-PAGE
         transform:scale(1.1);
         cursor: pointer;
     }
+
+
 
 
     .project-btn{
@@ -2024,14 +2045,16 @@ PROJECT-PAGE
         background:white;
         color: var(--primary-900);
         
+        
     }
 
     .show-active{
         outline:3px solid peru;
         border:3px solid white;
         box-shadow: none;
-        background:var(--primary-900);
-        color: var(--primary-100);
+        background:lightblue;
+        color: var(--primary-900);
+        box-shadow: 0px 2px 5px coral;
     }
 
   
@@ -2066,10 +2089,7 @@ PROJECT-PAGE
 
 @media screen and (min-width:820px) {
 
-
-
-
-
+  
 
     .project-btn{
         width: 21rem;
@@ -2084,6 +2104,43 @@ PROJECT-PAGE
 
     
 }
+
+
+
+@media screen and (min-width:1100px) {
+
+
+
+    .project-btn-container{
+        display: block;
+        display: flex;
+        width: 100%;
+        column-gap:2rem;
+  
+      }
+  
+  
+      .filter-container{
+          display: grid;
+          grid-template-columns:auto auto;
+          align-items: center;
+          column-gap:0;
+          
+  
+      }
+  
+  
+      .filter{
+          font-size: 2.3rem;
+          letter-spacing: 1px;
+          text-align: center;
+          width:20rem;
+         
+      }
+  
+    
+}
+
 
 
 
