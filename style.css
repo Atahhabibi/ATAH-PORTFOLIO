@@ -311,6 +311,7 @@ PORTOFOLIO-ATAH HABIBI
     padding:1rem;
     background:var(--primary-900);
     box-shadow: none;
+    transition: var(--transititon);
     
 }
 
@@ -1612,15 +1613,6 @@ RESUME SECTION
   }
 
  
- 
-
-
-
- 
-
-  
-
-
 
     
 }
@@ -1812,6 +1804,7 @@ PROJECT-PAGE
 .projects-page-section{
     background:var(--primary-900);
     padding-bottom:2rem;
+    position: relative;
 }
 
 .projects-page-title{
@@ -1830,6 +1823,14 @@ PROJECT-PAGE
 .javascript-btn{
     background:url('./images/icon/html-2.png');
    
+}
+
+.side-btn{
+    display: none;
+}
+
+.filter{
+    display: none;
 }
 
 .react-btn{
@@ -2064,6 +2065,10 @@ PROJECT-PAGE
 
 
 @media screen and (min-width:820px) {
+
+
+
+
 
 
     .project-btn{
